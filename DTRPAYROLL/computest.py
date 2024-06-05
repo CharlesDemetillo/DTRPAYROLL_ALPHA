@@ -238,7 +238,7 @@ def format_dtr(dtr_records, start_date, end_date, payroll_data):
         "time": time[0],  # Extracting the string directly
         "mode": mode[0],  # Extracting the string directly
         "remarks": remarks[0]  ,# Extracting the string directly
-        "grand_total_hours":total_hours_worked,
+        "grand_total_hours": f"{total_hours_worked:.2f}",  # Format to two decimal places
         "total_hours_weekly": total_hours_weekly
     }
 
